@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "3xl": "1800px",
+      },
       colors: {
         dark: {
           1: "#1C1F2E",
