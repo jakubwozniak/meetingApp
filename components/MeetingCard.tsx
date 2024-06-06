@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Button } from "./ui/button";
 //import { avatarImages } from "@/constants";
 import { useToast } from "./ui/use-toast";
+import { avatarImages } from "@/constants";
 
 interface MeetingCardProps {
   title: string;
@@ -43,7 +44,7 @@ const MeetingCard = ({
       </article>
       <article className={cn("flex justify-center relative", {})}>
         <div className="relative flex w-full max-sm:hidden">
-          {/*avatarImages.map((img, index) => (
+          {avatarImages.map((img, index) => (
             <Image
               key={index}
               src={img}
@@ -53,7 +54,7 @@ const MeetingCard = ({
               className={cn("rounded-full", { absolute: index > 0 })}
               style={{ top: 0, left: index * 28 }}
             />
-          ))*/}
+          ))}
           <div className="flex-center absolute left-[136px] size-10 rounded-full border-[5px] border-dark-3 bg-dark-4">
             +5
           </div>
