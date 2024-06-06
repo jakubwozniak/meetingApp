@@ -1,9 +1,13 @@
-import React from "react";
+import MeetingTypeList from "@/components/MeetingTypeList";
+import UpcomingMeeting from "@/components/UpcomingMeeting";
+import { getFormattedDate, getFormattedTime } from "@/lib/utils";
+import React, { Suspense, useEffect, useState } from "react";
 
 const Home = () => {
   return (
     <section className="flex size-full flex-col gap-10 text-white">
-      <h1 className="text-3xl font-bold">Home</h1>
+      <UpcomingMeeting />
+      <MeetingTypeList />
     </section>
   );
 };
